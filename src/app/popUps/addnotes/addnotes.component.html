@@ -1,0 +1,47 @@
+<div class="container">
+
+  <h2>Quick Notes</h2><br>
+<p>Title : <span> <input type="text"></span></p>
+<hr><br>
+<p>Tags : <span> <input type="text"></span></p>
+<hr><br>
+<p>Description : <span><input type="text"></span><br><br></p>
+<hr>
+  
+  <div class="row">
+    <i class="fas fa-palette" aria-hidden="true"></i>
+    <button id="color" (colorPicker)="color1" [style.background]="color1"></button> 
+    <input id="color" (colorPicker)="color2" [style.background]="color2"/> 
+    <input id="color" [(colorPicker)]="color3" [style.background]="color3"/> 
+    <input id="color" [(colorPicker)]="color4" [style.background]="color4"/> 
+    <input id="color" [(colorPicker)]="color5" [style.background]="color5"/> 
+    <input id="color" [(colorPicker)]="color6" [style.background]="color6"/> 
+    <i class="fas fa-trash" aria-hidden="true"></i>
+  
+  </div>
+  <button id="add">add</button>
+  <!--  <div class="form-group" id=>
+    <input type="text" class="form-control"  [(colorPicker)]="color1"
+    [style.background]="color1"
+    [value]="color1">
+  [cpPresetColors]="['#7B1FA2', '#039BE5', '#FF5252', '#D32F2F', '#283593']"
+    [cpPosition]="'left'"
+    [style.background]="color1"
+    [cpAlphaChannel]="'always'"
+    [cpOutputFormat]="'hex'" -->
+<!-- </div> --> 
+   
+</div>
+
+
+
+<!-- <p>Title : <span><input type="text"></span></p><br>
+<p>Tags : <span><input type="text"></span></p><br>
+<p>Description : <span><input type="text"></span></p> -->
+
+  <!--   <button (change)="onChange($event.target.value)" [ngStyle]="{'background-color':selectedColor}">orange</button> -->
+   
+    <!-- <select (change)="onChange($event.target.value)" [ngStyle]="{'background-color':selectedColor}">
+        <option *ngFor="let color of colors" [value]="color.value" [ngStyle]="{'background-color':color.value}"></option>
+    </select> -->
+   

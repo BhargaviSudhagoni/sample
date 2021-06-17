@@ -1,0 +1,100 @@
+<mat-sidenav-container class="sidenav-container" autosize>
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+ <div class="trapezoid"></div> 
+    <div class="imgcontainer">
+      <img
+        class="logo"
+        src="../assets/Screenshot_from_2021-04-22_12-46-03-removebg-preview.png"
+        alt="PM logo"
+      />
+    </div> 
+
+    <div class="menu">
+      <ol>
+        <li>
+          <img src="../assets/iconfinder_7_avatar_2754582.png" alt="profile" />
+        </li>
+        <li>
+          <h2>Ganga Rakesh</h2>
+        </li>
+        <li><h3>Manager</h3></li>
+        <li>
+          <a routerLink="profile"
+            ><i class="fa fa-user"></i><span>Profile</span></a
+          >
+        </li>
+        <li>
+          <a routerLink=""><i class="fa fa-bullseye"></i><span>Goals</span></a>
+        </li>
+        <li>
+          <a routerLink="reviews"
+            ><i class="fa fa-chart-line"></i><span>Reviews</span></a
+          >
+        </li>
+        <li>
+          <a routerLink="pip"
+            ><i class="fa fa-chart-pie"></i><span>PIP</span></a
+          >
+        </li>
+        <li>
+          <a routerLink="notifications" class="drawerlables"
+            ><i class="fa fa-bell"></i><span>DashBoard</span></a
+          >
+        </li>
+      </ol>
+
+      <button mat-raised-button style="color: #56ccf2">
+        <i class="fa fa-sign-out-alt"></i><span>Log out</span>
+      </button>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="d-flex align-items-center" id="tab">
+      <button
+        id="togglemenu"
+        type="button"
+        aria-label="Toggle sidenav"
+        (click)="drawer.toggle()"
+        *ngIf="true"
+      >
+        <mat-icon
+          aria-label="Side nav toggle icon"
+          *ngIf="!drawer.opened; else showCross"
+          >menu</mat-icon
+        >
+        <ng-template #showCross>
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </ng-template>
+      </button>
+
+      <a>
+        <button routerLink="setgoals" id="navButton" *ngIf="navBar">
+          SetGoal
+        </button></a
+      >
+      <a>
+        <button routerLink="assignpip" id="navButton" *ngIf="navBar">
+          AssignPIP
+        </button></a
+      >
+      <a>
+        <button routerLink="employeegoalslist" id="navButton" *ngIf="navBar">
+          GoalList
+        </button></a
+      >
+      <a
+        ><button routerLink="performancereview" id="navButton1" *ngIf="navBar">
+          PerformanceReview
+        </button></a
+      >
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

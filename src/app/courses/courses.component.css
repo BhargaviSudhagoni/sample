@@ -1,0 +1,10 @@
+.pagelable {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.9);
+    top: 10px;
+    left: 230px;
+    
+  }
+  p{
+    left:250px;
+  }

@@ -1,0 +1,345 @@
+@media (min-width: 1024px) {
+  .maincontainer {
+    height: 100%;
+    overflow: hidden;
+
+  }
+  p {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin-left: 35px;
+    padding-top: 25px;
+    font-family: Lato;
+  }
+
+  #card {
+ width: 290px;
+    height: 335;
+   margin-left: -100px;
+    margin-right: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  #firstcard {
+    background-color: #3a7ddd;
+    height: 76px;
+    width: 291px;
+    margin-top: -16px;
+    margin-left: -16px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  h4 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding-top: 40px;
+    font-family: Lato;
+  }
+  h4:hover{
+    font-size: 40px;
+  }
+  span{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Lato;
+  }
+  span:hover{
+    font-weight: 0px;
+  }
+  #completed{
+    margin-left: 95px;
+  }
+  #completed:hover{
+font-weight: 300;
+  }
+  #assigned:hover{
+    font-weight: 300;  
+  }
+  #buttoncard-sub1 {
+    margin-left: 31px;
+    margin-right: 15px;
+    margin-top: 20px;
+    background: #fff2f2;
+    border-radius: 10px;
+    width: 105px;
+    height: 98px;
+    border: none;
+  }
+  #buttoncard-sub1:hover{
+    background: #fff2f2;
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.432), 3px 3px 3px 0px #0000004d;
+ 
+  }
+  #buttoncard-sub1:focus{
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.575), 3px 6px 6px 0px #00000085;
+    border: none;
+    outline: none;
+   
+  }
+span:hover{
+    font-weight: 10px;
+  }
+
+
+  h5 {
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: -9px;
+    font-family: Lato;
+  }
+  #buttoncard-sub2 {
+    margin-top: 20px;
+    background: #FEFFC8;
+    border-radius: 10px;
+    width: 105px;
+    height: 98px;
+    border: none;
+  }
+  #buttoncard-sub2:hover{
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.432), 3px 3px 3px 0px #0000004d;
+  }
+ 
+  #buttoncard-sub2:focus{
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.575), 3px 6px 6px 0px #00000085;
+    border: none;
+    outline: none;
+  }
+  #buttoncard-sub3 {
+ border:none;
+ margin-left: 31px;
+    margin-top: 30px;
+    background: #bbf79f;
+    border-radius: 10px;
+    width: 232px;
+    height: 69px;
+  }
+
+  #buttoncard-sub3:hover{
+   
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.432), 3px 3px 3px 0px #0000004d;
+ 
+  }
+  #buttoncard-sub3:focus{
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.575), 3px 6px 6px 0px #00000085;
+   
+  }
+  h5:hover{
+    font-weight: bold;
+  }
+  #secondcard {
+    background-color: #3eae4d;
+    height: 76px;
+    width: 291px;
+    position: relative;
+    margin-top: -16px;
+    margin-left: -16px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  h2{
+    margin-left: 85px;
+   padding-top: 10px;
+   color:  #3eae4d;
+   font-family: Lato;
+  }
+  h2:hover{
+ font-weight: bold;
+ font-size: 27px;
+  }
+  
+  #thirdcard {
+    background-color: #e85c44;
+    height: 76px;
+    width: 291px;
+    position: relative;
+    margin-top: -16px;
+    margin-left: -16px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+
+  h3 {
+    color: #4f5673;
+    margin-left: 59px;
+    padding-top: 50px;
+    font-weight: 700px;
+    font-size: 24px;
+    font-family: Lato;
+  }
+ 
+  #hide{
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 200px;
+  }
+  #hide2{
+    position: absolute;
+    margin-left: 560px;
+    margin-top: 200px;
+  }
+  #hide3{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 330px;
+  }
+  #grid-container{
+    width: 1059px;
+    height: 300px;
+    margin-left: 91px;
+    border-radius: 10px;
+  }
+/*  #sideicons{
+ margin-top: -100px;
+    font-size: 50px;
+    border: none;
+    width: 15px;
+    height:40px ;
+    background-color: white;
+    color: #AFBBCB;
+  } */ 
+/*   #sideicons1{
+
+     font-size: 50px;
+     width: 15px;
+     height:40px ;
+     margin-top: 95px;
+     background-color: white;
+     color: #AFBBCB;
+   
+   }  */
+
+ #newNotes{
+  
+   width: 246px;
+   height: 206px;
+   margin-top: 30px;
+   margin-left: 35px;
+   border-radius: 20px;
+ }
+#newNotes:hover{
+  width: 250px;
+  height: 210px;
+  color: rgba(0, 0, 0, 0.13);
+background-color: none;
+background: none;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.247), 5px 5px 5px 5px #0000004d;
+}
+ #newNotes1{
+  width: 246px;
+  height: 206px;
+  margin-top: 30px;
+  margin-left: 60px;
+  border-radius: 20px;
+  background-color:#FEFFC8;
+}
+#newNotes1:hover{
+  width: 246px;
+  background-color:#FEFFC8;
+
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.575);
+}
+#newNotes2{
+  width: 246px;
+  height: 206px;
+  margin-top: 30px;
+  margin-left: 83px;
+  border-radius: 20px;
+  background-color:#C8FCFF;
+}
+#newNotes2:hover{
+  width: 246px;
+  background-color:#C8FCFF;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.575);
+}
+ #plus{
+   border: none;
+   position: absolute;
+   color: rgba(175, 187, 203, 0.5);
+   font-size:70px;
+   font-weight: 50px;
+  margin-top: 45px;
+  margin-left: 70px;
+  background-color: white;
+ 
+ }
+
+ #title{
+   margin-left:5px ;
+   font-size: 14px;
+   margin-top: -30px;
+   font-weight: 300;
+
+ }
+ #colon{
+  margin-left:40px ;
+  font-size: 14px;
+  margin-top: -57px;
+  font-weight: 300;
+ }
+ #result{
+  margin-left:55px ;
+  font-size: 14px;
+  margin-top: -57px;
+  font-weight: 700;
+ }
+ hr{
+  border: 0.5px solid #D8D8D8;
+   margin-top: -10px;
+ }
+ #des{
+  margin-left:5px ;
+  font-size: 14px;
+  margin-top: -35px;
+  font-weight: 300;
+ }
+ #desc{
+  margin-left:5px ;
+  font-size: 14px;
+  margin-top: -10px;
+  font-weight: 700;
+ }
+ i{
+padding-top: 25px;
+color: #AFBBCB;
+font-size: 22px;
+margin-left: 23px;
+ }
+ i:hover {
+  color: #292b2c;
+    font-size: 30px;
+
+  }
+ i:focus {
+    color: #292b2c;
+    font-size: 30px;
+
+  }
+ #grid-container .carousel-control-prev {
+  left: -70px;
+  border-bottom: 0;
+  font-size: 40px;
+  color: #444;
+  top:50px;
+}
+
+#grid-container .carousel-control-next {
+  right: -70px;
+  border-bottom: 0;
+  font-size: 40px;
+  color: #444;
+  top:50px;
+}
+
+
+ .carousel slide{
+    height: 100px;
+   width: 100px;
+  color: black;
+ }
+}

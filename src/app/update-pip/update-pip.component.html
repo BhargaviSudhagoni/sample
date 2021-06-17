@@ -1,0 +1,50 @@
+<h2 class="pagelable">Performance Improvement Plan</h2>
+<div class="maincontainer">
+    <form #appointmentform="ngForm" (ngSubmit)="updatepip(appointmentform.value);appointmentform.reset()" >
+<table >
+    <tr>
+        <td>Target Area</td>
+        <td id="colon">:</td>
+        <td id="in">{{this.viewpip.targetArea}}</td>
+    </tr><br><br>
+    <tr>
+        <td>ExpectedArea</td>
+        <td id="colon">:</td>
+        <td id="in">{{this.viewpip.expectedStandards}}</td>
+    </tr><br><br>
+    <tr>
+        <td>Training and support</td>
+        <td id="colon">:</td>
+        <td id="in">{{this.viewpip.trainingAndSupport}}</td>
+    </tr><br><br>
+    <tr>
+        <td>Duration</td>
+        <td id="colon">-</td>
+        <td>From :<span id="date">{{this.viewpip.start_date}}</span> </td>
+        <td >To :<span id="date"> {{this.viewpip.end_date}}</span></td>
+    </tr><br><br>
+    <tr>
+        <td>Assigned By</td>
+        <td id="colon">:</td>
+        <td id="in">{{this.viewpip.goalCreatedBy}}</td>
+    </tr><br><br>
+
+    <tr>
+       
+        <td>PIP Result</td>
+        <td id="colon">:</td>
+
+        <td id="in"> <textarea 
+            name="pipResult"
+            ngModel
+            #pipResult="ngModel"
+           
+            placeholder="Update your result here..."
+            ></textarea>
+      
+      </td>
+    </tr><br><br>
+</table>
+<button mat-raised-button >Update</button>
+</form>
+</div>

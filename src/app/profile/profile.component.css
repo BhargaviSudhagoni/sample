@@ -1,0 +1,21 @@
+mat-toolbar {
+  justify-content: space-between;
+}
+#plus {
+  border: none;
+  margin-left: 70px;
+  /*   position: absolute; */
+  color: rgba(175, 187, 203, 0.5);
+  /*   font-size: 70px;
+  font-weight: 50px; */
+  /*  margin-top: 45px;
+  margin-left: 70px; */
+  background-color: white;
+}
+.content {
+  padding: 16px;
+  margin: 0px;
+}
+.content > mat-card {
+  margin-bottom: 16px;
+}

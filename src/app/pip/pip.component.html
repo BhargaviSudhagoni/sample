@@ -1,0 +1,37 @@
+<h2 class="pagelable">Performance Improvement Plan</h2>
+<p>pip works!</p>
+<div class="maincontainer">
+
+        <table  class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Target Area</th>
+                <th scope="col">ExpectedArea</th> 
+                <th scope="col">Training and support</th>
+                <th scope="col">Check-ins and Review</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col">PIP Result</th>
+                <th scope="col">Assigned By</th>
+               <!--  <th scope="col">Action</th> -->
+               <th></th>
+            </tr>
+      
+        </thead>
+        <tbody >
+            <tr *ngFor="let pip of pipSave">
+             <td>{{pip.targetArea}}</td> 
+             <td>{{pip.expectedStandards}}</td> 
+             <td>{{pip.trainingAndSupport}}</td> 
+             <td>{{pip.feedbackByManager}}</td> 
+             <td>{{pip.start_date}}</td> 
+             <td>{{pip.end_date}}</td> 
+             <td>{{pip.pipResult}}</td> 
+             <td>{{pip.goalCreatedBy}}</td> 
+             <td><a routerLink="updatePIP/{{pip.pipId}}"><i class='far fa-edit' style="color: #56ccf2; size: 20px;"></i></a></td>
+            </tr>
+        </tbody>
+        </table>
+
+   
+        </div>

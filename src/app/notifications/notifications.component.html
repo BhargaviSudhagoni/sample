@@ -1,0 +1,142 @@
+<div class="maincontainer">
+  <h2 class="pagelable">Notifications</h2>
+
+  <form [formGroup]="addgoalsform" (ngSubmit)="addGoal()">
+    <div class="form-box-1">
+      <div class="select-box">
+        <select name="assessmentType" formControlName="assessmentType">
+          <option value="">select Assessment</option>
+          <option value="Q1">Q1</option>
+          <option value="Q2">Q2</option>
+          <option value="Q3">Q3</option>
+          <option value="Q4">Q4</option>
+        </select>
+      </div>
+      <span
+        *ngIf="
+          assessmentType &&
+          assessmentType.invalid &&
+          (assessmentType.dirty || assessmentType.touched)
+        "
+        id="error"
+        >*Select assessment type</span
+      >
+      <br />
+      <div class="select-box">
+        <select name="dimensionType" formControlName="dimensionType">
+          <option value="">select Dimension</option>
+          <option value="1">Busines Results</option>
+          <option value="2">Client success</option>
+          <option value="3">Innovation</option>
+          <option value="4">Skills</option>
+        </select>
+      </div>
+      <span
+        *ngIf="
+          dimensionType &&
+          dimensionType.invalid &&
+          (dimensionType.dirty || dimensionType.touched)
+        "
+        id="error"
+        >*Select dimension type</span
+      >
+      <br />
+      <div class="select-box">
+        <input
+          type="text"
+          placeholder="Goal title"
+          name="goaltitle"
+          formControlName="goaltitle"
+        />
+      </div>
+      <span
+        *ngIf="
+          goaltitle &&
+          goaltitle.invalid &&
+          (goaltitle.dirty || goaltitle.touched)
+        "
+        id="error"
+        >*Enter goal title</span
+      >
+      <br />
+      <div class="select-box">
+        <input
+          type="text"
+          placeholder="Goal discription"
+          name="goaldescripsion"
+          formControlName="goaldescripsion"
+        />
+      </div>
+      <span
+        *ngIf="
+          goaldescripsion &&
+          goaldescripsion.invalid &&
+          (goaldescripsion.dirty || goaldescripsion.touched)
+        "
+        id="error"
+        >*Enter goal descripsion</span
+      >
+      <br />
+      <button
+        mat-raised-button
+        style="color: #56ccf2"
+        class="goalbutton"
+        type="submit"
+        [disabled]="addgoalsform.invalid"
+      >
+        Add Goal
+      </button>
+    </div>
+  </form>
+
+  <form [formGroup]="dimensionsForm" (ngSubmit)="addDimension()">
+    <div class="form-box-2">
+      <div class="select-box">
+        <input
+          type="text"
+          placeholder="Dimension title"
+          name="dimension_title"
+          formControlName="dimension_title"
+        />
+      </div>
+      <span
+        *ngIf="
+          dimension_title &&
+          dimension_title.invalid &&
+          (dimension_title.dirty || dimension_title.touched)
+        "
+        id="error"
+        >*Enter dimensions title</span
+      >
+      <br />
+      <div class="select-box">
+        <input
+          type="text"
+          placeholder="Dimension discription"
+          name="dimension_desc"
+          formControlName="dimension_desc"
+        />
+      </div>
+      <span
+        *ngIf="
+          dimension_desc &&
+          dimension_desc.invalid &&
+          (dimension_desc.dirty || dimension_desc.touched)
+        "
+        id="error"
+        >*Enter dimension descripsion</span
+      >
+      <br />
+
+      <button
+        mat-raised-button
+        style="color: #56ccf2"
+        class="goalbutton"
+        type="submit"
+        [disabled]="dimensionsForm.invalid"
+      >
+        Add Dimension
+      </button>
+    </div>
+  </form>
+</div>

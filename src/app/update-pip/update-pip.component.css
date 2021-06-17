@@ -1,0 +1,72 @@
+.pagelable {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.9);
+  top: 10px;
+  left: 230px;
+  font-size:25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.maincontainer {
+  position: absolute;
+  left: 300px;
+  padding-top: 100px;
+}
+
+textarea{
+  resize: none;
+  border-radius: 20px;
+width: 200px;
+height: 100px;
+padding-left: 10px;
+padding-top: 10px;
+font-size: 15px;
+}
+::placeholder{
+  padding-left: 10px;
+padding-top: 10px;
+color: gray;
+opacity: 0.5;
+font-size: 15px;
+/* align-items: center;
+justify-content: center; */
+}
+textarea:focus{
+  resize: none;
+width: 200px;
+height: 100px;
+border-radius: 20px;
+outline: none;
+}
+table{
+  margin-left: 50px;
+  margin-right: 80px;
+}
+tr{
+font-size: 22px;
+font-weight: bold;
+}
+#in{
+  color: #56ccf2;
+}
+
+#colon{
+  padding-left: 40px;
+  padding-right: 20px;
+}
+#date{
+  padding-left: 10px;
+  color: #56ccf2;
+}
+button{
+  margin-left: 400px;
+    border-radius: 30px; 
+  width: 200px;
+  height: 50px;
+  background-color: #56ccf2;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+margin-top: 50px;
+text-transform: capitalize;
+}

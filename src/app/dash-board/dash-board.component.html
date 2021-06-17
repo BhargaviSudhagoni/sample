@@ -1,0 +1,255 @@
+<div class="main">
+    <p>Dashboard</p>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <mat-card id="card">
+
+            <mat-card-header id="firstcard">
+                <h4>Goals</h4>
+            </mat-card-header>
+            <div class="row">
+
+                <button mat-buuton id="buttoncard-sub1" (click)="toggleStart()">
+                    <h5>Yet to Start</h5>
+                    <span id="assigned">2</span>
+                </button>
+
+                <button mat-buuton id="buttoncard-sub2" (click)="toggleassigned()">
+                    <h5>In Progress</h5>
+                    <span id="assigned">8</span>
+                </button>
+                <button mat-buuton id="buttoncard-sub3" (click)="toggleCompleted()">
+                    <h5 style="padding-top: 16px;">Completed<span id="completed">9</span></h5>
+                </button>
+
+            </div>
+        </mat-card>
+
+        <div id="hide" *ngIf=!showProgress>
+            <mat-card>
+                progress
+            </mat-card>
+
+        </div>
+        <div id="hide2" [hidden]="showAssigned">
+            <mat-card>
+                assigned
+            </mat-card>
+
+        </div>
+        <div id="hide3" [hidden]="showCompleted">
+            <mat-card>
+                completd
+            </mat-card>
+
+        </div>
+
+
+        <mat-card id="card" style="margin-left: 20px;">
+            <mat-card-header id="secondcard">
+                <h4>Reviews</h4>
+            </mat-card-header>
+            <mat-card-content>
+                <div align="center" style="margin-top:5px; ">
+                    <circle-progress [percent]="rating" [space]="-8" [radius]="70" [outerStrokeWidth]="10"
+                        [innerStrokeWidth]="10" [outerStrokeColor]="'#3eae4d'" [innerStrokeColor]="'#e7e8ea'"
+                        [animation]="true" [animationDuration]="1000"></circle-progress>
+                </div>
+                <h2>+1 points</h2>
+            </mat-card-content>
+
+        </mat-card>
+
+
+
+        <mat-card id="card" style="margin-left: 20px;">
+
+            <mat-card-header id="thirdcard">
+                <h4>PIP</h4>
+            </mat-card-header>
+            <div class="row">
+                <button mat-buuton id="buttoncard-sub1">
+                    <h5>Assigned</h5><span id="assigned">2</span>
+                </button>
+                <button mat-buuton id="buttoncard-sub2">
+                    <h5>In Progress</h5><span id="assigned"> 2</span>
+                </button>
+                <button mat-buuton id="buttoncard-sub3">
+                    <h5 style="padding-top: 16px;">Completed<span id="completed">9</span></h5>
+                </button>
+
+            </div>
+        </mat-card>
+    </div>
+
+    <h3>Quick Notes</h3>
+
+    <!-- <mat-card id="grid-container">
+                <div id="inam" class="carousel slide" data-ride="carousel"  data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+    
+                                <div class="col-sm col-sm-3">
+                                    <div class="card" id="newNotes">
+                                        <div class="card-body">
+
+                                            <button id="plus" (click)="addNote()"><i class="fa fa-plus"></i>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm col-sm-3">
+                                    <div class="card" id="newNotes1">
+                                
+                                        <div class="card-body">
+                                            <p id="title"> Title</p>
+                                            <p id="colon"> : </p>
+                                            <span>
+                                                <p id="result"> Achieve Goal </p>
+                                            </span>
+                                            <hr size=100px>
+                                            <p id="title"> Tags</p>
+                                            <p id="colon"> : </p>
+                                            <span>
+                                                <p id="result"> @Prasanna </p>
+                                            </span>
+
+                                            <hr>
+                                            <p id="des"> Description : <span id="desc"> Complete udemy course of
+                                                    angular</span> </p>
+
+                                            <a id="icons" (click)="updateNote()"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                            <a id="icons"><i class="fas fa-palette" aria-hidden="true"></i></a>
+                                            <a id="icons" (click)="showToasterSuccess()"><i class="far fa-clone" aria-hidden="true"></i></a>
+                                            <a id="icons"  (click)="showToasterError()"><i class="fas fa-trash" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm col-sm-3">
+                                    <div class="card" id="newNotes2">
+                                        <div class="card-body">
+
+                                            <p id="title"> Title</p>
+                                            <p id="colon"> : </p>
+                                            <span>
+                                                <p id="result"> Achieve Goal </p>
+                                            </span>
+                                            <hr size=100px>
+                                            <p id="title"> Tags</p>
+                                            <p id="colon"> : </p>
+                                            <span>
+                                                <p id="result"> @Prasanna </p>
+                                            </span>
+
+                                            <hr>
+                                            <p id="des"> Description : <span id="desc"> Complete udemy course of
+                                                    angular</span> </p>
+
+                                            <a id="icons"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                            <a id="icons"><i class="fas fa-palette" aria-hidden="true"></i></a>
+                                            <a id="icons"><i class="far fa-clone" aria-hidden="true"></i></a>
+                                            <a id="icons"><i class="fas fa-trash" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+ 
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+
+
+                                    <div class="col-sm col-sm-4">
+                                        <div class="card" id="newNotes2">
+                                            <div class="card-body">
+
+                                                <p id="title"> Title</p>
+                                                <p id="colon"> : </p>
+                                                <span>
+                                                    <p id="result"> Achieve Goal </p>
+                                                </span>
+                                                <hr size=100px>
+                                                <p id="title"> Tags</p>
+                                                <p id="colon"> : </p>
+                                                <span>
+                                                    <p id="result"> @Prasanna </p>
+                                                </span>
+
+                                                <hr>
+                                                <p id="des"> Description : <span id="desc"> Complete udemy course of
+                                                        angular</span> </p>
+
+                                                <a id="icons"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                <a id="icons"><i class="fas fa-palette" aria-hidden="true"></i></a>
+                                                <a id="icons"><i class="far fa-clone" aria-hidden="true"></i></a>
+                                                <a id="icons"><i class="fas fa-trash" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm col-sm-3">
+                                        <div class="card" id="newNotes1">
+                                            <div class="card-body">
+
+                                                <p id="title"> Title</p>
+                                                <p id="colon"> : </p>
+                                                <span>
+                                                    <p id="result"> Achieve Goal </p>
+                                                </span>
+                                                <hr size=100px>
+                                                <p id="title"> Tags</p>
+                                                <p id="colon"> : </p>
+                                                <span>
+                                                    <p id="result"> @Prasanna </p>
+                                                </span>
+
+                                                <hr>
+                                                <p id="des"> Description : <span id="desc"> Complete udemy course of
+                                                        angular</span> </p>
+
+                                                <a id="icons"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                <a id="icons"><i class="fas fa-palette" aria-hidden="true"></i></a>
+                                                <a id="icons"><i class="far fa-clone" aria-hidden="true"></i></a>
+                                                <a id="icons"><i class="fas fa-trash" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                  
+                        <a href="#inam" data-slide="prev" class="carousel-control-prev" >
+                            <span><i class="fas fa-chevron-left" aria-hidden="true"></i></span>
+                        </a>
+                        <a href="#inam"  class="carousel-control-next" data-slide="next">
+                            <span><i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+                        </a>
+                   
+                      <!--   class="carousel-control-next-icon" -->
+    <!--    </div> -->
+
+
+    <!--    
+    </div>
+    </mat-card>  -->
+    <carousel>
+        <div class="carousel-cell">
+            <div class="add-image-panel">
+                <button (click)="handleAddImage()">+</button>
+            </div>
+        </div>
+        <ng-container *ngFor="let image of images; index as i">
+            <div class="carousel-cell">
+                <button class="delete-image-button" (click)="handleDeleteImage(i)">x</button>
+                <img src="{{image.path}}" />
+            </div>
+        </ng-container>
+    </carousel>
+</div>
