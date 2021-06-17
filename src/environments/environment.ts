@@ -4,9 +4,8 @@
 
 export const environment = {
   production: false,
-  url:"http://localhost:8080/pms"
+  /*   url:"http://localhost:8080/pms" */
 };
-
 
 /*
  * For easier debugging in development mode, you can import the following file
